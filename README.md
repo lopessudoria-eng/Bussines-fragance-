@@ -1,2 +1,2 @@
-# Golden
-Tudo ao seu alcance 
+# Golden business 
+Tudo ao seu alcance, just do it 
