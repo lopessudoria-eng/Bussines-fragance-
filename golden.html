@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Business - Perfumes de Luxo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { 
+      margin:0; 
+      font-family: 'Playfair Display', serif; 
+      background:#000; 
+      color:#FFD700; 
+      position:relative;
+      overflow-x: hidden;
+    }
+
+    /* Várias marcas d'água */
+    .watermark {
+      position: fixed;
+      font-size: 6em;
+      color: rgba(255, 215, 0, 0.1);
+      z-index: 0;
+      pointer-events: none;
+      user-select: none;
+      white-space: nowrap;
+      transform: rotate(-30deg);
+    }
+
+    .watermark1 { top: 10%; left: 5%; }
+    .watermark2 { top: 30%; left: 60%; }
+    .watermark3 { top: 50%; left: 20%; }
+    .watermark4 { top: 70%; left: 50%; }
+    .watermark5 { top: 85%; left: 10%; }
+
+    header { 
+      display:flex; 
+      justify-content:space-between; 
+      align-items:center; 
+      padding:20px; 
+      z-index: 1;
+      position: relative;
+    }
+
+    nav a { 
+      color:#FFD700; 
+      text-decoration:none; 
+      margin-left:20px; 
+      font-weight:bold; 
+    }
+
+    .hero { 
+      height:90vh; 
+      display:flex; 
+      flex-direction:column; 
+      justify-content:center; 
+      align-items:center; 
+      text-align:center; 
+      z-index: 1;
+      position: relative;
+    }
+
+    .hero h1 { 
+      font-size:3em; 
+      margin-bottom:20px; 
+    }
+
+    .btn { 
+      background:#FFD700; 
+      color:#000; 
+      padding:10px 30px; 
+      text-decoration:none; 
+      font-weight:bold; 
+      border-radius:5px; 
+      transition:0.3s; 
+    }
+
+    .btn:hover { 
+      background:#FFC107; 
+    }
+
+    .products { 
+      display:flex; 
+      justify-content:center; 
+      flex-wrap:wrap; 
+      gap:30px; 
+      padding:50px 20px; 
+      z-index: 1;
+      position: relative;
+    }
+
+    .product { 
+      background:#111; 
+      padding:20px; 
+      border-radius:10px; 
+      text-align:center; 
+      width:250px; 
+      transition:0.3s; 
+    }
+
+    .product img { 
+      width:100%; 
+      border-radius:10px; 
+    }
+
+    .product:hover { 
+      transform:scale(1.05); 
+    }
+
+    #contact { 
+      padding:50px 20px; 
+      text-align:center; 
+      z-index: 1;
+      position: relative;
+    }
+
+    footer { 
+      text-align:center; 
+      padding:20px; 
+      border-top:1px solid #FFD700; 
+      margin-top:50px; 
+      z-index: 1;
+      position: relative;
+    }
+
+    /* Botão WhatsApp fixo no canto inferior direito */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: #fff;
+      font-weight: bold;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration:none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1em;
+      transition: 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+      background: #1ebe5d;
+    }
+
+    .whatsapp-btn img {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Marcas d'água -->
+<div class="watermark watermark1">Golden Business</div>
+<div class="watermark watermark2">Golden Business</div>
+<div class="watermark watermark3">Golden Business</div>
+<div class="watermark watermark4">Golden Business</div>
+<div class="watermark watermark5">Golden Business</div>
+
+<header>
+  <div class="logo">Golden Business</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Produtos</a>
+    <a href="#about">Sobre</a>
+    <a href="#contact">Contato</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Sinta o luxo. Golden Business.</h1>
+  <a href="#products" class="btn">Comprar Agora</a>
+</section>
+
+<section class="products" id="products">
+  <div class="product">
+    <img src="/Golden business /Fotos golden /IMG-20260127-WA0028.jpg" alt="Perfume 1">
+    <h2>Perfume Lux</h2>
+    <p>Fragrância sofisticada para momentos inesquecíveis.</p>
+    <p>Preço: 5.000kz</p>
+    <a href="#" class="btn">Comprar</a>
+  </div>
+  <div class="product">
+    <img src="/Golden business /Fotos golden /IMG-20260106-WA0176.jpg" alt="Perfume 2">
+    <h2>Perfume Gold</h2>
+    <p>Elegância e charme em cada gota.</p>
+    <p>Preço: 5.000kz</p>
+    <a href="#" class="btn">Comprar</a>
+  </div>
+</section>
+
+<section id="about" style="padding:50px 20px; text-align:center;">
+  <h2>Sobre Nós</h2>
+  <p>Golden Business nasceu para levar perfumes sofisticados a quem busca exclusividade e qualidade. Descubra fragrâncias únicas que definem sua personalidade.</p>
+</section>
+
+<section id="contact">
+  <h2>Contato</h2>
+  <p>Entre em contato conosco pelo WhatsApp:</p>
+  <a href="https://wa.me/+244 939980685" target="_blank" class="btn">WhatsApp</a>
+</section>
+
+<footer>
+  <p>© 2026 Golden Business. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Botão flutuante do WhatsApp -->
+<a href="https://wa.me/244912345678" target="_blank" class="whatsapp-btn">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  WhatsApp
+</a>
+
+</body>
+</html>
